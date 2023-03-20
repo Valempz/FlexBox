@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  letter-spacing: 0.01rem;
+  line-height: 1.8;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  background: linear-gradient(to right, #cebec9, #3d61bb);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width: 300px;
+  height: auto;
+  border-radius: 17px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.25;
+  background: linear-gradient(to right, #1e4793, #de39de);
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 13px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 363px;
+  height: 300px;
+}
+
+.container .card h2 {
+  font-weight: 800;
+  color: #cebec9;
+}
+
+.container .card p {
+  padding: 0 1.5rem;
+  font-size: 18px;
+  font-weight: 200;
+  text-shadow: 1px 1px #0f0e0e;
+  color: #ffffffae;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(226, 211, 211, 0.971);
+}
+#inicio-sesion {
+  background: linear-gradient(to right, #1e4793, #de39de);
+  border-radius: 17px;
+  color: #ffffffae;
+  font-size: 20px;
+  padding: 33px;
+  height: 100%;
+  margin: 30px;
+}
+
+#inicio-sesion h2 {
+  font-size: 34px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#inicio-sesion form label {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+
+#inicio-sesion form input[type="text"],
+#inicio-sesion form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+#inicio-sesion form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4970ab;
+  color: #bac3d0;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  cursor: pointer;
+}
+
+#inicio-sesion button {
+  display: block;
+  width: 100%;
+  padding: 5%;
+  margin-top: 10px;
+  background-color: #4970ab;
+  border: none;
+  border-radius: 5px;
+  color: #bac3d0;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+#inicio-sesion button[type="submit"]:hover,
+#inicio-sesion button:hover {
+  background-color: #de39de;
+}
+#cambio-de-contraseña {
+  background: linear-gradient(to right, #1e4793, #de39de);
+  border-radius: 17px;
+  color: #ffffffae;
+  font-size: 20px;
+  padding: 33px;
+  height: 110%;
+  border-radius: 17px;
+  margin: 30px;
+}
+
+#cambio-de-contraseña h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#cambio-de-contraseña label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#cambio-de-contraseña input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+#cambio-de-contraseña button[type="submit"],
+#cambio-de-contraseña button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4970ab;
+  color: #bac3d0;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#cambio-de-contraseña button[type="submit"]:hover,
+#cambio-de-contraseña button:hover {
+  background-color: #de39de;
+}
+
+.burbuja {
+  border-radius: 50%;
+  background: #aa55ce;
+  opacity: 0.3;
+
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}

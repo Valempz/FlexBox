@@ -1,0 +1,103 @@
+<!-- van a crear un nuevo proyecto, con un contenedor de 3 cards( titulo, imagen y texto, dónde usen flexbox y responsivo, por último van hacer una función de verdad y falso, de autentificar el usuario y otra función para el cambio de contraseñas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/logopastoraleman.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>SITIO PASTOR ALEMAN</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <img src="./assets/pastor1.png" alt="Foto_de_pastor_aleman" />
+        <h2>PASTOR ALEMAN</h2>
+        <p>
+          Originario de Alemania, este perro de gran tamaño es el resultado del
+          cruce de varios perros pastores. Tiene su origen en el capitán Max
+          Frederic Emile von Stephanitz. La raza del pastor alemán se reconoció
+          oficialmente en 1899.
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/pastor3.png" alt="Foto_de_pastor_aleman" />
+        <h2>CARACTERISTICAS</h2>
+        <p>
+          Los pastores alemanes alcanzan como máximo 65 cm de altura, y pesan
+          hasta aproximadamente 41 kg. Se trata de un perro bien proporcionado.
+          La cabeza es ancha y se estrecha con gracia en un hocico afilado. Las
+          orejas son bastante largas y se mantienen erguidas.
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/pastor4.png" alt="Foto_de_mi_mascota" />
+        <h2>COMPORTAMIENTO</h2>
+        <p>
+          El Pastor Alemán es una de las razas más amigables y cariñosas que
+          existen. Siempre quiere estar acompañado de los suyos y no aguanta
+          estar en soledad. Exige tiempo a sus dueños para jugar y moverse
+          realizando algún que otro entrenamiento, por lo que no es un perro muy
+          casero.
+        </p>
+        <a href="#">Leer más</a>
+      </div>
+      <div id="inicio-sesion">
+        <h2>Iniciar sesión</h2>
+        <form>
+          <!--form es una etiqueta de formulario, lo que hace es que permite al usiario enviar informacion-->
+          <!--label es una etiqueta que se usa para la interfaz del usuario, osea para que el usuario se pueda comunicar con la computadora-->
+          <label for="usuario"><i class="bi bi-person-heart"></i></label>
+          <input type="text" id="valempz" name="valempz" required /><br />
+          <!--required se usa para que el formulario sea obligatorio de responder-->
+          <label for="contraseña"><i class="bi bi-lock"></i></label>
+          <input type="password" id="12345" name="12345" required/><br />
+          <!--cuando el boton es presionado, se ejecuta la funcion "login()"-->
+          <button type="submit" onclick="funcion()">Iniciar sesión</button>
+        </form>
+        <button onclick="valecambiopassword()">Cambiar contraseña</button>
+        <!--añadir el boton de cambio de contraseña-->
+      </div>
+
+      <div id="cambio-de-contraseña" style="display: none">
+        <!--en este caso el style display none se usa para que se oculte un elemento en html y para no ocupar espacio en el diseño de la pagina -->
+        <h2>Cambiar contraseña</h2>
+        <form>
+          <!--el id se utiliza para identificar el elemento de manera unica, y el name para enviar los datos ingresados por el usuario al servidor cuando se realiza el formulario-->
+          <label for="antiguacontraseña">Contraseña actual:</label>
+          <input type="password" id="antiguacontraseña" name="antiguacontraseña"><br>
+      
+          <label for="nuevacontraseña">Nueva contraseña:</label>
+          <input type="password" id="nuevacontraseña" name="nuevacontraseña"><br>
+      
+          <label for="confirmarcontraseña">Confirmar nueva contraseña:</label>
+          <input type="password" id="confirmarcontraseña" name="confirmarcontraseña"><br>
+
+          <button type="submit" onclick="cambiopassword()">Cambiar contraseña</button>
+          <button onclick="ocultarcontraseña()">Cancelar</button>
+        </form>
+      </div>
+    </section>
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+
+    </div>
+    <script src="./contra.js"></script>
+  </body>
+</html>
