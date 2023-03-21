@@ -41,7 +41,7 @@ function cambiopassword() {
 
   // validar si la contraseña actual es correcta
   if (antiguacontraseña == "123") {
-    alert("La contraseña se ha cambiado correctamente y es 123");
+    alert(`La contraseña se ha cambiado correctamente y es ${nuevacontraseña} `);
     return true;
   } else {
     alert("La contraseña actual es incorrecta. Por favor, inténtelo de nuevo.");

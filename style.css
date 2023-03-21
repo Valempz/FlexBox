@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
 html,
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
   letter-spacing: 0.01rem;
   line-height: 1.8;
   font-family: "Edu NSW ACT Foundation", cursive;
-  background: linear-gradient(to right, #cebec9, #3d61bb);
+  background: linear-gradient(to right, #cebec9, #ffc08c);
 }
 
 .container {
@@ -35,7 +35,7 @@ body {
   margin: 30px;
   text-align: center;
   transition: all 0.25;
-  background: linear-gradient(to right, #1e4793, #de39de);
+  background: linear-gradient(to right, #b96e48, #cba075);
 }
 
 .container .card:hover {
@@ -55,19 +55,22 @@ body {
 
 .container .card p {
   padding: 0 1.5rem;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
-  text-shadow: 1px 1px #0f0e0e;
-  color: #ffffffae;
+  color: black;
+  font-family: 'Sono', sans-serif;
 }
 
 .container .card a {
   font-weight: 500;
   text-decoration: none;
-  color: rgba(226, 211, 211, 0.971);
+  color: #fbfbfbf8;
+  font-size: 20px;
+  font-family: 'Sono', sans-serif;
+
 }
 #inicio-sesion {
-  background: linear-gradient(to right, #1e4793, #de39de);
+  background: linear-gradient(to right, #b96e48, #cba075);
   border-radius: 17px;
   color: #ffffffae;
   font-size: 20px;
@@ -77,9 +80,9 @@ body {
 }
 
 #inicio-sesion h2 {
-  font-size: 34px;
+  font-size: 24px;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Sono', sans-serif;
 }
 
 #inicio-sesion form label {
@@ -95,6 +98,7 @@ body {
   margin-bottom: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
+  
 }
 
 #inicio-sesion form button[type="submit"] {
@@ -103,11 +107,11 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4970ab;
+  background-color: #aa7444;
   color: #bac3d0;
   font-size: 20px;
   text-align: center;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: 'Sono', sans-serif;
   cursor: pointer;
 }
 
@@ -116,20 +120,20 @@ body {
   width: 100%;
   padding: 5%;
   margin-top: 10px;
-  background-color: #4970ab;
+  background-color: #aa7444;
   border: none;
   border-radius: 5px;
   color: #bac3d0;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: 'Sono', sans-serif;
   font-size: 20px;
   cursor: pointer;
 }
 #inicio-sesion button[type="submit"]:hover,
 #inicio-sesion button:hover {
-  background-color: #de39de;
+  background-color: #996b42;
 }
 #cambio-de-contraseña {
-  background: linear-gradient(to right, #1e4793, #de39de);
+  background: linear-gradient(to right, #b96e48, #cba075);
   border-radius: 17px;
   color: #ffffffae;
   font-size: 20px;
@@ -142,13 +146,14 @@ body {
 #cambio-de-contraseña h2 {
   font-size: 24px;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Sono', sans-serif;
 }
 
 #cambio-de-contraseña label {
   display: block;
   text-align: left;
   margin-bottom: 5px;
+  font-family: 'Sono', sans-serif;
 }
 
 #cambio-de-contraseña input[type="password"] {
@@ -157,6 +162,7 @@ body {
   margin-bottom: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
+  
 }
 
 #cambio-de-contraseña button[type="submit"],
@@ -166,23 +172,23 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4970ab;
+  background-color: #aa7444;
   color: #bac3d0;
   font-size: 20px;
   text-align: center;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: 'Sono', sans-serif;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 #cambio-de-contraseña button[type="submit"]:hover,
 #cambio-de-contraseña button:hover {
-  background-color: #de39de;
+  background-color: #996b42;
 }
 
 .burbuja {
   border-radius: 50%;
-  background: #aa55ce;
+  background: #b17c54;
   opacity: 0.3;
 
   position: absolute;
